@@ -3,10 +3,12 @@
 import controller
 import view
 
+
 # открытие родной базы самого приложения для считывания данных
 def view_current_records():
     with open('directory_mode_1_2.txt', 'r', encoding="utf-8") as page:
         return page.readlines()
+
 
 # добавление в справочник новой информации
 def adding_new_entries():
