@@ -32,7 +32,6 @@ def distribution_by_modes(mode_number):
         name = name_check(value)
         flag = importy.contacts_import(name)
         if flag: mode.progress_import(name)
-        # if mod[0] == True: export.contacts_export(information, mod[1])
 
 
 # проверка ввода новых записей режима (2)

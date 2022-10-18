@@ -23,10 +23,12 @@ def contacts_import(name):
     return True
     
 
-
+# добавление данных импортируемого файла формата ***
 def contacts_import_2(lst):
-    print(lst)
-
-'''принимает список из списков контактов, отфильтрованный, готовый к записи в само приложение 
-осталось только разделить по элементам и придумать как записать'''
-
+    n_ = '\n'
+    with open(f'directory_mode_1_2.txt', 'a', encoding="utf-8") as page:
+        for i in lst:
+            for j in i:
+                j = j + n_
+                page.write(j)
+            page.write(n_)

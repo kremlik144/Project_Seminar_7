@@ -16,7 +16,7 @@ def adding_new_entries():
 
     for i, values in enumerate(value):
         with open('directory_mode_1_2.txt', 'a', encoding="utf-8") as page:
-            page.write(f'{values} \n')
+            page.write(f'{values}\n')
         if i == 3:
             with open('directory_mode_1_2.txt', 'a', encoding="utf-8") as page:
                 page.write('\n')
